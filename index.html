@@ -3,8 +3,65 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>BUDS</title>
-<meta name="description" content="BUDS — Swiss-Brazilian artist, curator and musician from Biel/Bienne." />
+<title>BUDS — Swiss-Brazilian Artist, Curator &amp; Musician | Biel/Bienne</title>
+<meta name="description" content="Official website of BUDS — Swiss-Brazilian rapper, curator and musician from Biel/Bienne, founder of Buds Fest. News, discography, videos and gallery." />
+<link rel="canonical" href="https://badmanbuds.art/" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BUDS" />
+<meta property="og:title" content="BUDS — Swiss-Brazilian Artist, Curator &amp; Musician" />
+<meta property="og:description" content="Official website of BUDS from Biel/Bienne, founder of Buds Fest. News, discography, videos and gallery." />
+<meta property="og:url" content="https://badmanbuds.art/" />
+<meta property="og:image" content="https://badmanbuds.art/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BUDS — Swiss-Brazilian Artist, Curator &amp; Musician" />
+<meta name="twitter:description" content="Official website of BUDS from Biel/Bienne, founder of Buds Fest. News, discography, videos and gallery." />
+<meta name="twitter:image" content="https://badmanbuds.art/og.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicGroup",
+      "@id": "https://badmanbuds.art/#artist",
+      "name": "BUDS",
+      "url": "https://badmanbuds.art/",
+      "image": "https://badmanbuds.art/og.jpg",
+      "description": "Swiss-Brazilian artist, curator and musician from Biel/Bienne. Founder of Buds Fest, member of the crew La Base.",
+      "genre": ["Hip Hop", "Rap"],
+      "foundingLocation": { "@type": "City", "name": "Biel/Bienne" },
+      "memberOf": { "@type": "MusicGroup", "name": "La Base", "sameAs": "https://open.spotify.com/artist/3nENDm76UANJIPtAzVl9kV" },
+      "sameAs": [
+        "https://open.spotify.com/artist/3WWwaNIedCv5YRyZ4eIhZd"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://badmanbuds.art/#website",
+      "url": "https://badmanbuds.art/",
+      "name": "BUDS",
+      "about": { "@id": "https://badmanbuds.art/#artist" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Festival",
+      "name": "Buds Fest",
+      "url": "https://badmanbuds.art/#budsfest",
+      "organizer": { "@id": "https://badmanbuds.art/#artist" },
+      "location": { "@type": "Place", "name": "Gurzelen", "address": { "@type": "PostalAddress", "addressLocality": "Biel/Bienne", "addressCountry": "CH" } },
+      "description": "Festival curated by BUDS, bringing together artists from different countries, regions and languages. Editions at Coupole Biel/Bienne, São Paulo and open-air at Gurzelen."
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Black&display=swap" rel="stylesheet" />
@@ -128,6 +185,19 @@
   .gal-grid figure:hover img { transform: scale(1.04); filter: grayscale(0%); }
 
   /* ---------- FOOTER ---------- */
+  /* ---------- LEGAL (Impressum / Privacy) ---------- */
+  .legal { max-width: 940px; margin: 0 auto; padding: 8px 24px 90px; }
+  .legal__body { border-top: 1px solid var(--fg); padding-top: 28px; }
+  .legal p { font-size: 17px; line-height: 1.65; color: #1a1a1a; margin-bottom: 16px; max-width: 68ch; }
+  .legal h3 { font-family: var(--display); font-size: clamp(24px, 3.2vw, 34px); line-height: 1; letter-spacing: -0.02em; margin: 40px 0 14px; }
+  .legal h3:first-child { margin-top: 0; }
+  .legal ul { margin: 0 0 16px 20px; max-width: 68ch; }
+  .legal li { font-size: 17px; line-height: 1.65; color: #1a1a1a; margin-bottom: 6px; }
+  .legal a { text-decoration: underline; text-underline-offset: 3px; }
+  .legal a:hover { opacity: 0.6; }
+  .legal .updated { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-bottom: 18px; }
+  .legal address { font-style: normal; font-size: 17px; line-height: 1.65; margin-bottom: 16px; }
+
   .footer { max-width: var(--max); margin: 0 auto; padding: 40px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
   .footer__logo { font-family: var(--display); font-size: 20px; color: #000; letter-spacing: -0.02em; }
   .footer__links { display: flex; gap: 20px; flex-wrap: wrap; }
@@ -184,6 +254,7 @@
     .strip__cell { border-bottom: 1px solid var(--line); }
 
     .news-wrap { padding: 4px 22px 70px; }
+    .legal { padding: 4px 22px 70px; }
     .videos { padding: 12px 22px 70px; gap: 22px; }
     .disco { padding: 8px 22px 70px; }
     .fest-intro { padding: 4px 22px 10px; }
@@ -377,6 +448,85 @@
         </div>
       </div>
     </section>
+
+    <!-- ============ IMPRESSUM ============ -->
+    <section class="view" data-view="impressum">
+      <div class="section-head"><p class="eyebrow">Legal</p><h2>Impressum</h2></div>
+      <div class="legal">
+        <div class="legal__body">
+          <h3>Responsible for this website</h3>
+          <address>
+            BUDS GmbH<br />
+            Natan Veraguth<br />
+            Rue du Stand 75<br />
+            2502 Biel/Bienne<br />
+            Switzerland<br />
+            E-mail: <a href="mailto:natan.veraguth@gmail.com">natan.veraguth@gmail.com</a>
+          </address>
+
+          <h3>Hosting</h3>
+          <p>This website is hosted on GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.</p>
+
+          <h3>Copyright</h3>
+          <p>All content on this website — texts, photographs, artwork, logos and the BUDS Display typeface — is protected by copyright and belongs to BUDS or the credited authors. Any reproduction, distribution or other use beyond private viewing requires prior written consent.</p>
+
+          <h3>Disclaimer</h3>
+          <p>The content of this website has been compiled with great care. However, no guarantee is given for its accuracy, completeness or timeliness. Liability for damages of a material or immaterial nature arising from access to, use of or non-use of the published information is excluded to the extent permitted by law.</p>
+          <p>This website contains links to and embedded content from third-party websites. We have no influence on their content and accept no responsibility for it. The respective provider is solely responsible for the content of linked and embedded pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACY ============ -->
+    <section class="view" data-view="privacy">
+      <div class="section-head"><p class="eyebrow">Legal</p><h2>Privacy Policy</h2></div>
+      <div class="legal">
+        <div class="legal__body">
+          <p class="updated">Last updated: 11 September 2026</p>
+          <p>This privacy policy explains which personal data is processed when you visit badmanbuds.art, for what purpose, and what rights you have. It is based on the Swiss Federal Act on Data Protection (FADP / DSG).</p>
+
+          <h3>1. Controller</h3>
+          <p>Responsible for data processing on this website:</p>
+          <address>
+            BUDS GmbH, Natan Veraguth<br />
+            Rue du Stand 75, 2502 Biel/Bienne, Switzerland<br />
+            E-mail: <a href="mailto:natan.veraguth@gmail.com">natan.veraguth@gmail.com</a>
+          </address>
+
+          <h3>2. What we do not do</h3>
+          <p>This website is a purely informational site. We do not use analytics or tracking tools, we set no cookies of our own, we have no contact form, no newsletter and no user accounts. We do not sell or share personal data for advertising.</p>
+
+          <h3>3. Hosting and server logs</h3>
+          <p>The website is hosted on GitHub Pages (GitHub, Inc., San Francisco, USA). When you open a page, your browser automatically transmits technical data to GitHub's servers, in particular your IP address, the page requested, date and time, browser type and operating system. GitHub may store this data in server logs for security and operational purposes. GitHub is certified under the Swiss-U.S. Data Privacy Framework. Details: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>.</p>
+
+          <h3>4. Web fonts (Google Fonts)</h3>
+          <p>Body text is displayed using the font "Archivo", loaded from Google Fonts (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland). When the page loads, your browser connects to Google's servers and transmits your IP address so the font files can be delivered. Google states that no cookies are set in connection with Google Fonts. Details: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+          <h3>5. Embedded content from third parties</h3>
+          <p>Some sections embed players from external platforms. These players are only loaded when you open the respective section. As soon as they load, a direct connection to the provider's servers is established, your IP address is transmitted, and the provider may set its own cookies or collect usage data — including for its own purposes, over which we have no control.</p>
+          <ul>
+            <li><strong>Spotify</strong> (Discography): Spotify AB, Regeringsgatan 19, 111 53 Stockholm, Sweden. <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank" rel="noopener">Spotify Privacy Policy</a>.</li>
+            <li><strong>YouTube</strong> (Videos): Google Ireland Limited, Dublin, Ireland. Videos are embedded in privacy-enhanced mode ("youtube-nocookie"), which means YouTube does not store information about visitors unless a video is played. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+          </ul>
+          <p>If you are logged in to one of these platforms, the provider may link your visit to your account. You can prevent this by logging out beforehand.</p>
+
+          <h3>6. Contact by e-mail</h3>
+          <p>If you contact us by e-mail, the data you provide (your e-mail address, name and the content of your message) is stored solely to handle your enquiry and any follow-up questions. It is not shared with third parties.</p>
+
+          <h3>7. Transfer of data abroad</h3>
+          <p>The providers named above are partly located outside Switzerland (USA, EU). Data transfers to the USA are based on the Swiss-U.S. Data Privacy Framework or on standard contractual clauses recognised by the Federal Data Protection and Information Commissioner (FDPIC). Transfers to the EU are permitted because the EU offers an adequate level of data protection.</p>
+
+          <h3>8. Your rights</h3>
+          <p>Under the FADP you have the right to request information about the personal data we hold about you, to have incorrect data corrected, and to request that your data be deleted or its processing restricted. You may also object to processing and request that your data be handed over in a common electronic format. To exercise these rights, contact us at the e-mail address given above. You also have the right to lodge a complaint with the <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">Federal Data Protection and Information Commissioner (FDPIC)</a>.</p>
+
+          <h3>9. Security</h3>
+          <p>This website is delivered exclusively over an encrypted HTTPS connection.</p>
+
+          <h3>10. Changes</h3>
+          <p>We may update this privacy policy at any time. The version published on this website applies.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
@@ -390,7 +540,11 @@
         <span data-nav="budsfest">Buds Fest</span>
         <span data-nav="gallery">Gallery</span>
       </div>
-      <div>© 2026 BUDS — All rights reserved</div>
+      <div class="footer__links footer__legal">
+        <span data-nav="impressum">Impressum</span>
+        <span data-nav="privacy">Privacy</span>
+      </div>
+      <div>© 2026 BUDS GmbH — All rights reserved</div>
     </div>
   </footer>
 
@@ -437,9 +591,19 @@
     navLinks.forEach(l => l.classList.toggle('is-active', l.dataset.nav === name));
     document.getElementById('mnav').classList.remove('is-open');
     window.scrollTo({ top: 0 });
+    const hash = name === 'home' ? '' : '#' + name;
+    if (location.hash !== hash) history.replaceState(null, '', location.pathname + hash);
   }
 
   document.querySelectorAll('[data-nav]').forEach(el => el.addEventListener('click', () => go(el.dataset.nav)));
+
+  // Deep links: badmanbuds.art/#privacy, /#impressum, /#news ...
+  function goFromHash() {
+    const name = location.hash.replace('#', '');
+    if (name && [...views].some(v => v.dataset.view === name)) go(name);
+  }
+  goFromHash();
+  window.addEventListener('hashchange', goFromHash);
 
   // ---------- MOBILE MENU ----------
   document.getElementById('menuToggle').addEventListener('click', () =>
@@ -454,14 +618,14 @@
   document.getElementById('searchOpen').addEventListener('click', openSearch);
   document.getElementById('searchClose').addEventListener('click', closeSearch);
 
-  const idx = { 'news':'News','discography':'Discography','videos':'Videos','buds fest':'Buds Fest','budsfest':'Buds Fest','gallery':'Gallery','fest':'Buds Fest' };
+  const idx = { 'news':'News','discography':'Discography','videos':'Videos','buds fest':'Buds Fest','budsfest':'Buds Fest','gallery':'Gallery','fest':'Buds Fest','impressum':'Impressum','privacy':'Privacy Policy','legal':'Impressum' };
   searchInput.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter') return;
     const q = searchInput.value.trim().toLowerCase();
     if (!q) return;
     const key = Object.keys(idx).find(k => k.includes(q) || idx[k].toLowerCase().includes(q));
     if (key) {
-      const target = key === 'buds fest' || key === 'fest' ? 'budsfest' : (idx[key].toLowerCase().replace(' ',''));
+      const target = key === 'buds fest' || key === 'fest' ? 'budsfest' : key === 'privacy' ? 'privacy' : key === 'legal' ? 'impressum' : (idx[key].toLowerCase().replace(' ',''));
       searchResults.innerHTML = '→ <b style="color:#000">' + idx[key] + '</b>';
       setTimeout(() => { closeSearch(); go(target); }, 300);
     } else {
